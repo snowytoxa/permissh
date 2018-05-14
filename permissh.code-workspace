@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.linting.pydocstyleEnabled": true,
+		"python.linting.pylintArgs": [
+			"--rcfile=${workspaceFolder}/src/.pylintrc",
+			"--msg-template={path}:{line}: [{msg_id}({symbol}), {obj}] {msg}'"
+		],
+		"python.unitTest.pyTestEnabled": false,
+		"python.unitTest.unittestEnabled": false,
+		"python.pythonPath": "${workspaceFolder}/.env/bin/python",
+		"python.linting.pylintPath": "${workspaceFolder}/.env/bin/pylint",
+		"python.unitTest.pyTestPath": "${workspaceFolder}/.env/bin/pytest",
+		"python.unitTest.cwd": "${workspaceFolder}/src/",
+		"python.unitTest.pyTestArgs": [
+			"-v",
+			"${workspaceFolder}/src/"
+		],
+		"editor.rulers": [
+			120
+		],
+		"[git-commit]": {
+			"editor.rulers": [
+				120
+			]
+		},
+		"python.linting.pylintUseMinimalCheckers": true,
+		"python.linting.pydocstyleArgs": [
+			"--ignore=E501"
+		],
+		"autoDocstring.docstringFormat": "google",
+		"python.unitTest.promptToConfigure": false,
+		"python.unitTest.nosetestsEnabled": false
+	}
+}
